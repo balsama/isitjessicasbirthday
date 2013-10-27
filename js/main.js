@@ -5,7 +5,7 @@ var height = window.innerHeight;
 var width = window.innerWidth;
 
 function isIt(month, day) {
-  if (month == 10 && day == 27) {
+  if (month == 11 && day == 23) {
     return true;
   }
   return false;
