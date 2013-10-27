@@ -5,7 +5,7 @@ var height = window.innerHeight;
 var width = window.innerWidth;
 
 function isIt(month, day) {
-  if (month == 10 && day == 25) {
+  if (month == 10 && day == 27) {
     return true;
   }
   return false;
@@ -17,4 +17,5 @@ if (isIt(month, day)) {
     'height': height,
     'width': width
   });
+  $('.yes #answer').text('yes :)');
 }
