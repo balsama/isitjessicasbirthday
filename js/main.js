@@ -5,7 +5,14 @@ var height = window.innerHeight;
 var width = window.innerWidth;
 
 function isIt(month, day) {
-  if (month == 11 && day == 23) {
+  var hash = window.location.hash;
+  if (hash == '#force-yes') {
+    return true;
+  }
+  else if (hash == '#force-no') {
+    return false;
+  }
+  else if (month == 11 && day == 23) {
     return true;
   }
   return false;
@@ -19,3 +26,4 @@ if (isIt(month, day)) {
   });
   $('.yes #answer').text('yes :)');
 }
+
